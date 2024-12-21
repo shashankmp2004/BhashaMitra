@@ -24,8 +24,8 @@ export const courseConfig: CourseConfig = {
     },
     {
       icon: "box",
-      label: "Quests",
-      href: "/quests",
+      label: "Bot",
+      href: "/bot",
     },
     {
       icon: "shop",
@@ -56,8 +56,8 @@ export const courseConfig: CourseConfig = {
     },
     {
       icon: "box",
-      label: "Quests",
-      href: "/quests",
+      label: "Bot",
+      href: "/bot",
     },
     {
       icon: "profile",
