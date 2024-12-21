@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Pressable, ScrollView } from "react-native";
 
 import { Text, View } from "@/components/themed";

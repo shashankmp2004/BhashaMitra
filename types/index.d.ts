@@ -4,13 +4,9 @@ import { Icons } from "@/components/icons";
 
 export type SupportedLanguageCode =
   | "en"
-  | "my"
-  | "ja"
-  | "th"
-  | "es"
-  | "fr"
-  | "cn"
-  | "ru"
+  | "te"
+  | "kn"
+  | "ta"
   | "hi";
 
 export type Languages = {

@@ -1,3 +1,4 @@
+import React from "react";
 import { Stack } from "expo-router";
 
 import { MainHeader } from "@/components/layouts/main-header";

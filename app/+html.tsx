@@ -1,4 +1,5 @@
 import { ScrollViewStyleReset } from "expo-router/html";
+import React from "react";
 
 import { siteConfig } from "@/config/site";
 
