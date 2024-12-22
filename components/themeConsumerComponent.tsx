@@ -16,24 +16,30 @@ const ThemeConsumerComponent = () => {
   };
   
   const styles = StyleSheet.create({
-      footer: {
-        position: "absolute",
-        bottom: 20,
-        alignSelf: "center",
-        backgroundColor: "#000",
-        padding: 5,
-        borderRadius: 8,
-      },
-      toggleButton: {
-        backgroundColor: "#fff",
-        padding: 5,
-        borderRadius: 8,
-      },
-      toggleButtonText: {
-        color: "#000",
-        fontSize: 16,
-        fontWeight: "bold",
-      },
-    });
+    footer: {
+      position: "absolute",
+      bottom: 20,
+      alignSelf: "center",
+    },
+    toggleButton: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      backgroundColor: "#2B2B2B",
+      paddingVertical: 10,
+      paddingHorizontal: 16,
+      borderRadius: 20,
+      shadowColor: "#000",
+      shadowOffset: { width: 0, height: 2 },
+      shadowOpacity: 0.25,
+      shadowRadius: 3.84,
+      elevation: 5,
+    },
+    toggleButtonText: {
+      color: "#FFFFFF",
+      fontSize: 16,
+      fontWeight: "bold",
+      marginLeft:8,
+    },
+  });
   
   export default ThemeConsumerComponent;
