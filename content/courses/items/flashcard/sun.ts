@@ -20,7 +20,7 @@ export const sunFlashCard: FlashCardExercise = {
         ta: "சந்திரன்",
         hi: "चाँद",
       },
-      image: "https://www.svgrepo.com/show/36891/moon.svg",
+      image: "https://www.svgrepo.com/show/484307/moon.svg",
     },
     {
       id: 1,
@@ -31,7 +31,7 @@ export const sunFlashCard: FlashCardExercise = {
         ta: "சூரியன்",
         hi: "सूरज",
       },
-      image: "https://www.svgrepo.com/show/389133/sun.svg",
+      image: "https://www.svgrepo.com/show/434342/sun.svg",
     },
     {
       id: 2,
@@ -42,7 +42,7 @@ export const sunFlashCard: FlashCardExercise = {
         ta: "நட்சத்திரம்",
         hi: "तारा",
       },
-      image: "https://www.svgrepo.com/show/38890/star.svg",
+      image: "https://www.svgrepo.com/show/513354/star.svg",
     },
     {
       id: 3,
@@ -53,7 +53,7 @@ export const sunFlashCard: FlashCardExercise = {
         ta: "மேகம்",
         hi: "बादल",
       },
-      image: "https://www.svgrepo.com/show/164902/cloud.svg",
+      image: "https://www.svgrepo.com/show/513285/cloud.svg",
     },
   ],
   correctWordId: 1,

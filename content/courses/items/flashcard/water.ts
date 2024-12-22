@@ -21,7 +21,7 @@ export const waterFlashCard: FlashCardExercise = {
         ta: "தேநீர்",
         hi: "चाय",  
       },
-      image: "https://www.svgrepo.com/show/475139/tea.svg",
+      image: "https://www.svgrepo.com/show/513350/tea.svg",
     },
     {
       id: 1,
@@ -32,7 +32,7 @@ export const waterFlashCard: FlashCardExercise = {
         ta: "தண்ணீர்",
         hi: "पानी",
       },
-      image: "https://www.svgrepo.com/show/218416/water.svg",
+      image: "https://www.svgrepo.com/show/467448/water.svg",
     },
     {
       id: 2,
@@ -44,7 +44,7 @@ export const waterFlashCard: FlashCardExercise = {
         hi: "सुशी",
         
       },
-      image: "https://www.svgrepo.com/show/402766/sushi.svg",
+      image: "https://www.svgrepo.com/show/505198/sushi.svg",
     },
     {
       id: 3,

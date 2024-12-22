@@ -20,7 +20,7 @@ export const dogFlashCard: FlashCardExercise = {
         ta: "பூனை",
         hi: "बिल्ली",
       },
-      image: "https://www.svgrepo.com/show/27053/cat.svg",
+      image: "https://www.svgrepo.com/show/454281/cat-halloween-kitty.svg",
     },
     {
       id: 1,
@@ -31,7 +31,7 @@ export const dogFlashCard: FlashCardExercise = {
         ta: "நாய்",
         hi: "कुत्ता",
       },
-      image: "https://www.svgrepo.com/show/38776/dog.svg",
+      image: "https://www.svgrepo.com/show/405227/dog.svg",
     },
     {
       id: 2,
@@ -53,7 +53,7 @@ export const dogFlashCard: FlashCardExercise = {
         ta: "குதிரை",
         hi: "घोड़ा",
       },
-      image: "https://www.svgrepo.com/show/327909/horse.svg",
+      image: "https://www.svgrepo.com/show/405818/horse.svg",
     },
   ],
   correctWordId: 1,

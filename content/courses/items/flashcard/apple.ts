@@ -20,7 +20,7 @@ export const appleFlashCard: FlashCardExercise = {
         ta: "வாழைப்பழம்",
         hi: "केला",
       },
-      image: "https://www.svgrepo.com/show/397813/banana.svg",
+      image: "https://www.svgrepo.com/show/475237/banana.svg",
     },
     {
       id: 1,
@@ -31,7 +31,7 @@ export const appleFlashCard: FlashCardExercise = {
         ta: "ஆப்பிள்",
         hi: "सेब",
       },
-      image: "https://www.svgrepo.com/show/303275/apple-fruit.svg",
+      image: "https://www.svgrepo.com/show/530203/apple.svg",
     },
     {
       id: 2,
@@ -42,7 +42,7 @@ export const appleFlashCard: FlashCardExercise = {
         ta: "திராட்சை",
         hi: "अंगूर",
       },
-      image: "https://www.svgrepo.com/show/356134/grapes.svg",
+      image: "https://www.svgrepo.com/show/400291/grapes.svg",
     },
     {
       id: 3,
@@ -53,7 +53,7 @@ export const appleFlashCard: FlashCardExercise = {
         ta: "மாம்பழம்",
         hi: "आम",
       },
-      image: "https://www.svgrepo.com/show/353420/mango.svg",
+      image: "https://www.svgrepo.com/show/397130/mango.svg",
     },
   ],
   correctWordId: 1,

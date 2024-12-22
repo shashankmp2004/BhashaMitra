@@ -47,7 +47,7 @@ export function CourseRightBar({ courseId }: Props) {
               textTransform: "uppercase",
             }}
           >
-            View all
+            
           </Text>
         </View>
         <View style={{ flexDirection: "row" }}>

@@ -22,25 +22,25 @@ type LeaderboardCategory = 'xp' | 'streak' | 'lessons';
 
 const leaderboardData: Record<LeaderboardCategory, LeaderboardUser[]> = {
   xp: [
-    { id: '1', name: 'John Doe', score: 15000, rank: 1, avatar: '/placeholder.svg?height=50&width=50' },
-    { id: '2', name: 'Jane Smith', score: 14500, rank: 2, avatar: '/placeholder.svg?height=50&width=50' },
-    { id: '3', name: 'Bob Johnson', score: 14000, rank: 3, avatar: '/placeholder.svg?height=50&width=50' },
-    { id: '4', name: 'Alice Brown', score: 13500, rank: 4, avatar: '/placeholder.svg?height=50&width=50' },
-    { id: '5', name: 'Charlie Davis', score: 13000, rank: 5, avatar: '/placeholder.svg?height=50&width=50' },
+    { id: '1', name: 'Prafull Ananad', score: 15000, rank: 1, avatar: 'https://www.svgrepo.com/show/446481/avatar-portrait.svg?height=50&width=50' },
+    { id: '2', name: 'Shashank Padanad', score: 14500, rank: 2, avatar: 'https://www.svgrepo.com/show/446475/avatar.svg?height=50&width=50' },
+    { id: '3', name: 'Kshitij Singh', score: 14000, rank: 3, avatar: 'https://www.svgrepo.com/show/446486/avatar.svg?height=50&width=50' },
+    { id: '4', name: 'Harshit Agarwal', score: 13500, rank: 4, avatar: 'https://www.svgrepo.com/show/446490/avatar-portrait.svg?height=50&width=50' },
+    { id: '5', name: 'Lokesh Vemuri', score: 13000, rank: 5, avatar: 'https://www.svgrepo.com/show/446523/avatar.svg?height=50&width=50' },
   ],
   streak: [
-    { id: '1', name: 'Emma Wilson', score: 365, rank: 1, avatar: '/placeholder.svg?height=50&width=50' },
-    { id: '2', name: 'Liam Anderson', score: 300, rank: 2, avatar: '/placeholder.svg?height=50&width=50' },
-    { id: '3', name: 'Olivia Taylor', score: 250, rank: 3, avatar: '/placeholder.svg?height=50&width=50' },
-    { id: '4', name: 'Noah Martinez', score: 200, rank: 4, avatar: '/placeholder.svg?height=50&width=50' },
-    { id: '5', name: 'Ava Thompson', score: 180, rank: 5, avatar: '/placeholder.svg?height=50&width=50' },
+    { id: '1', name: 'Shashank Padanad', score: 365, rank: 1, avatar: 'https://www.svgrepo.com/show/446475/avatar.svg?height=50&width=50' },
+    { id: '2', name: 'Prafull Ananad', score: 300, rank: 2, avatar: 'https://www.svgrepo.com/show/446481/avatar-portrait.svg?height=50&width=50'},
+    { id: '3', name: 'Kshitij Singh', score: 250, rank: 3, avatar: 'https://www.svgrepo.com/show/446486/avatar.svg?height=50&width=50' },
+    { id: '4', name: 'Lokesh Vemuri', score: 200, rank: 4, avatar: 'https://www.svgrepo.com/show/446523/avatar.svg?height=50&width=50' },
+    { id: '5', name: 'Harshit Agarwal', score: 180, rank: 5, avatar: 'https://www.svgrepo.com/show/446490/avatar-portrait.svg?height=50&width=50'  },
   ],
   lessons: [
-    { id: '1', name: 'Sophia Lee', score: 500, rank: 1, avatar: '/placeholder.svg?height=50&width=50' },
-    { id: '2', name: 'Jackson White', score: 450, rank: 2, avatar: '/placeholder.svg?height=50&width=50' },
-    { id: '3', name: 'Isabella Clark', score: 400, rank: 3, avatar: '/placeholder.svg?height=50&width=50' },
-    { id: '4', name: 'Aiden Hall', score: 350, rank: 4, avatar: '/placeholder.svg?height=50&width=50' },
-    { id: '5', name: 'Mia Scott', score: 300, rank: 5, avatar: '/placeholder.svg?height=50&width=50' },
+    { id: '1', name: 'Kshitij Singh', score: 500, rank: 1, avatar: 'https://www.svgrepo.com/show/446486/avatar.svg?height=50&width=50' },
+    { id: '2', name: 'Lokesh Vemuri', score: 450, rank: 2, avatar: 'https://www.svgrepo.com/show/446523/avatar.svg?height=50&width=50' },
+    { id: '3', name: 'Harshit Agarwal', score: 400, rank: 3, avatar: 'https://www.svgrepo.com/show/446490/avatar-portrait.svg?height=50&width=50'  },
+    { id: '4', name: 'Shashank Padanad', score: 350, rank: 4, avatar: 'https://www.svgrepo.com/show/446475/avatar.svg?height=50&width=50' },
+    { id: '5', name: 'Prafull Ananad', score: 300, rank: 5, avatar: 'https://www.svgrepo.com/show/446481/avatar-portrait.svg?height=50&width=50' },
   ],
 };
 

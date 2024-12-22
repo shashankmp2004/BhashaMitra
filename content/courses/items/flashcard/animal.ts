@@ -20,7 +20,7 @@ export const elephantFlashCard: FlashCardExercise = {
         ta: "சிங்கம்",
         hi: "सिंह",
       },
-      image: "https://www.svgrepo.com/show/155239/lion.svg",
+      image: "https://www.svgrepo.com/show/396923/lion.svg",
     },
     {
       id: 1,
@@ -31,7 +31,7 @@ export const elephantFlashCard: FlashCardExercise = {
         ta: "யானை",
         hi: "हाथी",
       },
-      image: "https://www.svgrepo.com/show/232981/elephant.svg",
+      image: "https://www.svgrepo.com/show/297433/elephant.svg",
     },
     {
       id: 2,
@@ -42,7 +42,7 @@ export const elephantFlashCard: FlashCardExercise = {
         ta: "ஜிராப்",
         hi: "जिराफ़",
       },
-      image: "https://www.svgrepo.com/show/231143/giraffe.svg",
+      image: "https://www.svgrepo.com/show/405198/giraffe.svg",
     },
     {
       id: 3,
@@ -53,7 +53,7 @@ export const elephantFlashCard: FlashCardExercise = {
         ta: "ஹிப்போபொடமஸ்",
         hi: "हिप्पोपोटमस",
       },
-      image: "https://www.svgrepo.com/show/361204/hippopotamus.svg",
+      image: "https://www.svgrepo.com/show/405809/hippopotamus.svg",
     },
   ],
   correctWordId: 1,

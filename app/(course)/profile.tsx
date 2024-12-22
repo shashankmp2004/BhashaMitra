@@ -72,15 +72,15 @@ export default function ProfileScreen() {
       <View style={styles.header}>
         <View style={styles.profileImageContainer}>
           <Image
-            source={{ uri: '/placeholder.svg?height=100&width=100' }}
+            source={{ uri: 'https://www.svgrepo.com/show/446475/avatar.svg?height=150&width=150' }}
             style={styles.profileImage}
           />
           <TouchableOpacity style={styles.editButton}>
             <Ionicons name="pencil" size={16} color="#FFFFFF" />
           </TouchableOpacity>
         </View>
-        <Text style={styles.username}>User123</Text>
-        <Text style={styles.subtitle}>Rookie Level</Text>
+        <Text style={styles.username}>Shashank Padanad</Text>
+        <Text style={styles.subtitle}>Level #2</Text>
       </View>
 
       {/* Stats Section */}
