@@ -24,7 +24,7 @@ export default function CourseLayout() {
         <View style={{ flexDirection: "row", flex: 1 }}>
           {breakpoint !== "sm" && (
             <CourseLeftBar
-              appName={siteConfig.name}
+              
               navItems={courseConfig.sidebarNavItems}
             />
           )}

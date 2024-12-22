@@ -6,7 +6,7 @@ import { exerciseFour } from "./exercises/2";
 export const lessonThree: Lesson = {
   id: 2,
   description: {
-    en: "ooooooo",
+    en: "Lesson 3",
     kn: "ಆಹಾರವನ್ನು ಆರ್ಡರ್ ಮಾಡಿ",
     te: "ఆహారం ఆర్డర్ చేయండి",
     ta: "உணவை ஆர்டர் செய்யுங்கள்", 
