@@ -9,7 +9,9 @@ import { useColorScheme } from "react-native";
 import { themeColors } from "@/constants/colors";
 import { Colors } from "@/types";
 
-type ThemeContextType = Colors;
+type ThemeContextType = Colors & {
+  toggleTheme: () => void;
+};
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
@@ -28,13 +30,23 @@ interface Props {
 export function ThemeProvider({ children }: Props) {
   const colorScheme = useColorScheme();
 
-  const [colors, setColors] = useState(themeColors.light); // default light theme
+  const [colors, setColors] = useState(themeColors.dark); // default light theme
+  const [themeName, setThemeName] = useState<"light" | "dark">(
+    colorScheme === "dark" ? "dark" : "light"
+  );
+
+  function toggleTheme() {
+    setThemeName((prev) => (prev === "light" ? "dark" : "light"));
+  }
 
   useEffect(() => {
-    setColors(themeColors[colorScheme ?? "light"]);
-  }, [colorScheme]);
+    setColors(themeColors[themeName]);
+  }, [themeName]);
 
-  const userContext: ThemeContextType = colors;
+  const userContext: ThemeContextType = {
+    ...colors,
+    toggleTheme,
+  };
 
   return (
     <DefaultThemeProvider
@@ -45,4 +57,4 @@ export function ThemeProvider({ children }: Props) {
       </ThemeContext.Provider>
     </DefaultThemeProvider>
   );
-}
+} 

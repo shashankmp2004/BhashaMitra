@@ -1,6 +1,6 @@
 import { Link, router, usePathname } from "expo-router";
 import { Pressable } from "react-native";
-
+import React from "react";
 import { Icon, Icons } from "@/components/icons";
 import { Text, View } from "@/components/themed";
 import { colors } from "@/constants/colors";
@@ -8,6 +8,7 @@ import { layouts } from "@/constants/layouts";
 import { useBreakpoint } from "@/context/breakpoints";
 import { useTheme } from "@/context/theme";
 import { NavItem } from "@/types";
+import ThemeConsumerComponent from "../themeConsumerComponent";
 
 interface Props {
   navItems: NavItem[];
@@ -49,6 +50,7 @@ export function CourseLeftBar({ navItems, appName }: Props) {
           </Text>
         )}
       </Link>
+      <ThemeConsumerComponent/>
       {navItems.map((navItem, index) => {
         const isActive =
           pathname === navItem.href || pathname.startsWith(navItem.href);
