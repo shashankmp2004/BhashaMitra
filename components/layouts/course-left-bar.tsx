@@ -1,7 +1,8 @@
+import React from "react";
 import { Link, router, usePathname } from "expo-router";
-import { Pressable } from "react-native";
+import { Pressable, Image } from "react-native"; // Added Image import
 
-import { Icon, Icons } from "@/components/icons";
+import { Icon } from "@/components/icons";
 import { Text, View } from "@/components/themed";
 import { colors } from "@/constants/colors";
 import { layouts } from "@/constants/layouts";
@@ -11,10 +12,9 @@ import { NavItem } from "@/types";
 
 interface Props {
   navItems: NavItem[];
-  appName: string;
 }
 
-export function CourseLeftBar({ navItems, appName }: Props) {
+export function CourseLeftBar({ navItems }: Props) {
   const { border, accent, foreground } = useTheme();
   const breakpoint = useBreakpoint();
   const pathname = usePathname();
@@ -35,19 +35,10 @@ export function CourseLeftBar({ navItems, appName }: Props) {
           paddingLeft: layouts.padding * 2,
         }}
       >
-        {breakpoint == "xl" || breakpoint == "2xl" ? (
-          <img src="../../assets/images/mascot" alt="" />
-          ) : (
-          <Text
-            style={{
-              fontSize: 24,
-              fontWeight: "bold",
-              color: "#1cb0f6",
-            }}
-          >
-            {appName.charAt(0).toLowerCase()}
-          </Text>
-        )}
+        <Image
+          source={require("mascot.png")} // Display mascot.png
+          style={{ width: 40, height: 40 }} // Adjust size as needed
+        />
       </Link>
       {navItems.map((navItem, index) => {
         const isActive =
@@ -61,7 +52,7 @@ export function CourseLeftBar({ navItems, appName }: Props) {
                   gap: layouts.padding,
                   alignItems: "center",
                   paddingHorizontal:
-                    breakpoint == "xl" || breakpoint == "2xl"
+                    breakpoint === "xl" || breakpoint === "2xl"
                       ? layouts.padding * 1.5
                       : layouts.padding,
                   paddingVertical: layouts.padding,
@@ -76,7 +67,7 @@ export function CourseLeftBar({ navItems, appName }: Props) {
                   name={navItem.icon}
                   color={isActive ? foreground : undefined}
                 />
-                {(breakpoint == "xl" || breakpoint == "2xl") && (
+                {(breakpoint === "xl" || breakpoint === "2xl") && (
                   <Text
                     style={{
                       fontWeight: "800",
