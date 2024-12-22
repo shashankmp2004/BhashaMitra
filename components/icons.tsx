@@ -469,6 +469,23 @@ export const Icons = {
       />
     </Svg>
   ),
+  chatbot: ({ ...props }: SvgProps) => (
+    <Svg viewBox="0 0 24 24" fill="none" {...props}>
+      <Path
+      opacity="0.5"
+      d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"
+      fill={props.color}
+    />
+    <Path
+      d="M12 16c-1.5 0-2.8-.8-3.5-2h7c-.7 1.2-2 2-3.5 2zm-3-5c-.83 0-1.5-.67-1.5-1.5S8.17 8 9 8s1.5.67 1.5 1.5S9.83 11 9 11zm6 0c-.83 0-1.5-.67-1.5-1.5S14.17 8 15 8s1.5.67 1.5 1.5S15.83 11 15 11z"
+      fill={props.color}
+    />
+    </Svg>
+  ),
+  
+  
+  
+
   bolt: ({ ...props }: SvgProps) => (
     <Svg viewBox="0 0 24 24" fill="none" {...props}>
       <Path
@@ -485,3 +502,4 @@ export const Icons = {
     </Svg>
   ),
 };
+  

@@ -21,6 +21,13 @@ export const appleFlashCard: FlashCardExercise = {
         hi: "केला",
       },
       image: "https://www.svgrepo.com/show/475237/banana.svg",
+      audio: {
+        en: { uri: "https://example.com/audio/tea.mp3" },
+        kn: { uri: "assets/audios/course/files/banana-kn.mp3" },
+        te: { uri: "https://example.com/audio/tea_te.mp3" },
+        ta: { uri: "https://example.com/audio/tea_ta.mp3" },
+        hi: { uri: "https://example.com/audio/tea_hi.mp3" },
+      },
     },
     {
       id: 1,
@@ -32,6 +39,13 @@ export const appleFlashCard: FlashCardExercise = {
         hi: "सेब",
       },
       image: "https://www.svgrepo.com/show/530203/apple.svg",
+      audio: {
+        en: { uri: "https://example.com/audio/tea.mp3" },
+        kn: { uri: "assets/audios/course/files/apple-kn.mp3" },
+        te: { uri: "https://example.com/audio/tea_te.mp3" },
+        ta: { uri: "https://example.com/audio/tea_ta.mp3" },
+        hi: { uri: "https://example.com/audio/tea_hi.mp3" },
+      },
     },
     {
       id: 2,
@@ -43,6 +57,13 @@ export const appleFlashCard: FlashCardExercise = {
         hi: "अंगूर",
       },
       image: "https://www.svgrepo.com/show/400291/grapes.svg",
+      audio: {
+        en: { uri: "https://example.com/audio/tea.mp3" },
+        kn: { uri: "assets/audios/course/files/grapes-kn.mp3" },
+        te: { uri: "https://example.com/audio/tea_te.mp3" },
+        ta: { uri: "https://example.com/audio/tea_ta.mp3" },
+        hi: { uri: "https://example.com/audio/tea_hi.mp3" },
+      },
     },
     {
       id: 3,
@@ -54,6 +75,14 @@ export const appleFlashCard: FlashCardExercise = {
         hi: "आम",
       },
       image: "https://www.svgrepo.com/show/397130/mango.svg",
+      audio: {
+        en: { uri: "https://example.com/audio/tea.mp3" },
+        kn: { uri: "assets/audios/course/files/mango-kn.mp3" },
+        te: { uri: "https://example.com/audio/tea_te.mp3" },
+        ta: { uri: "https://example.com/audio/tea_ta.mp3" },
+        hi: { uri: "https://example.com/audio/tea_hi.mp3" },
+      },
+      
     },
   ],
   correctWordId: 1,

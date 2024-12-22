@@ -22,6 +22,13 @@ export const waterFlashCard: FlashCardExercise = {
         hi: "चाय",  
       },
       image: "https://www.svgrepo.com/show/513350/tea.svg",
+      audio: {
+        en: { uri: "https://example.com/audio/tea.mp3" },
+        kn: { uri: "assets/audios/course/files/tea-kn.mp3"},
+        te: { uri: "https://example.com/audio/tea_te.mp3" },
+        ta: { uri: "https://example.com/audio/tea_ta.mp3" },
+        hi: { uri: "https://example.com/audio/tea_hi.mp3" },
+      },
     },
     {
       id: 1,
@@ -33,6 +40,13 @@ export const waterFlashCard: FlashCardExercise = {
         hi: "पानी",
       },
       image: "https://www.svgrepo.com/show/467448/water.svg",
+      audio: {
+        en: { uri: "https://example.com/audio/tea.mp3" },
+        kn: { uri: "assets/audios/course/files/water-kn.mp3" },
+        te: { uri: "https://example.com/audio/tea_te.mp3" },
+        ta: { uri: "https://example.com/audio/tea_ta.mp3" },
+        hi: { uri: "https://example.com/audio/tea_hi.mp3" },
+      },
     },
     {
       id: 2,
@@ -45,6 +59,13 @@ export const waterFlashCard: FlashCardExercise = {
         
       },
       image: "https://www.svgrepo.com/show/505198/sushi.svg",
+      audio: {
+        en: { uri: "https://example.com/audio/tea.mp3" },
+        kn: { uri: "assets/audios/course/files/sushi-kn.mp3" },
+        te: { uri: "https://example.com/audio/tea_te.mp3" },
+        ta: { uri: "https://example.com/audio/tea_ta.mp3" },
+        hi: { uri: "https://example.com/audio/tea_hi.mp3" },
+      },
     },
     {
       id: 3,
@@ -57,6 +78,13 @@ export const waterFlashCard: FlashCardExercise = {
         
       },
       image: "https://www.svgrepo.com/show/505200/rice.svg",
+      audio: {
+        en: { uri: "https://example.com/audio/tea.mp3" },
+        kn: { uri: "assets/audios/course/files/rice-kn.mp3" },
+        te: { uri: "https://example.com/audio/tea_te.mp3" },
+        ta: { uri: "https://example.com/audio/tea_ta.mp3" },
+        hi: { uri: "https://example.com/audio/tea_hi.mp3" },
+      },
     },
   ],
   correctWordId: 1,

@@ -28,7 +28,7 @@ export const courseConfig: CourseConfig = {
       href: "/quest",
     },
     {
-      icon: "box",
+      icon: "chatbot",
       label: "Bot",
       href: "/bot",
     },

@@ -1,3 +1,4 @@
+import React from "react";
 import { Icon } from "@/components/icons";
 import { Text, View, ViewProps } from "@/components/themed";
 import { layouts } from "@/constants/layouts";
