@@ -37,7 +37,7 @@ export const Icon = ({
 };
 
 export const Icons = {
-  euolingo: ({ ...props }: SvgProps) => (
+  BhashaMitra: ({ ...props }: SvgProps) => (
     <Svg viewBox="0 0 280.3036780593864 60" {...props}>
       <Defs>
         <LinearGradient

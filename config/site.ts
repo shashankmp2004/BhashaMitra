@@ -1,11 +1,11 @@
 import { SiteConfig } from "@/types";
 
 const ASSETS_URL =
-  "https://raw.githubusercontent.com/anandprafull/coderit_kn/main/assets";
+  "https://github.com/Minions-Whackiest/BhashaMitra/blob/main/assets";
 
 export const siteConfig: SiteConfig = {
-  name: "coderit_km",
-  title: "coderit_km",
+  name: "BhashaMitra",
+  title: "BhashaMitra",
   description: "",
   url: " http://localhost:8081",
   author: {
@@ -13,9 +13,9 @@ export const siteConfig: SiteConfig = {
     username: "@anandprafull",
     url: "https://github.com/anandprafull",
   },
-  ogImage: `${ASSETS_URL}/public/og.png`,
+  ogImage: `https://github.com/Minions-Whackiest/BhashaMitra/blob/main/assets/images/mascot.svg`,
   appleTouchIcon: `${ASSETS_URL}/public/apple-touch-icon.png`,
-  icon16x16: `${ASSETS_URL}/public/favicon-16x16.png`,
-  icon32x32: `${ASSETS_URL}/public/favicon-32x32.png`,
-  manifest: `${ASSETS_URL}/public/site.webmanifest`,
+  icon16x16: `favicon.ico`,
+  icon32x32: `favicon.ico`,
+  manifest: `favicon.ico`,
 };
