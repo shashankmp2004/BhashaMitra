@@ -3,7 +3,7 @@ import { Lesson } from "@/types/course";
 import { exerciseOne } from "./exercises/1";
 import { exerciseTwo } from "./exercises/2";
 
-export const lessonOne: Lesson = {
+export const lessonFive: Lesson = {
   id: 1,
   description: {
     en: "Order food",

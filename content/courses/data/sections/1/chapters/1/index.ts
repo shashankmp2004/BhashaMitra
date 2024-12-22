@@ -2,6 +2,9 @@ import { Chapter } from "@/types/course";
 
 import { lessonOne } from "./lessons/1";
 import { lessonTwo } from "./lessons/2";
+import { lessonThree } from "./lessons/3";
+import { lessonFour } from "./lessons/4";
+import { lessonFive } from "./lessons/5";
 
 
 export const chapterOne: Chapter = {
@@ -22,5 +25,5 @@ export const chapterOne: Chapter = {
     hi: "खाना ऑर्डर करें, लोगों का वर्णन करें",
     
   },
-  lessons: [lessonOne, lessonOne, lessonTwo, lessonTwo, lessonOne],
+  lessons: [lessonOne, lessonTwo, lessonThree, lessonFour, lessonFive],
 };
