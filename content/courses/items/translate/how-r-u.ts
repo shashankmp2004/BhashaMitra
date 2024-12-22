@@ -48,7 +48,7 @@ export const howAreYouTranslate: TranslateExercise = {
       id: 2,
       word: {
         content: {
-          en: "you",
+          en: "are",
           kn: "ನೀವು",
           te: "మీరు",
           ta: "நீங்கள்",
@@ -60,7 +60,7 @@ export const howAreYouTranslate: TranslateExercise = {
       id: 3,
       word: {
         content: {
-          en: "are",
+          en: "you",
           kn: "ಇರುತ್ತೀರಿ",
           te: "ఉన్నారు",
           ta: "இருக்கிறீர்கள்",

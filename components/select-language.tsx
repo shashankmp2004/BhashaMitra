@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Image } from "expo-image";
 import { Pressable } from "react-native";
 import Popover from "react-native-popover-view/dist/Popover";

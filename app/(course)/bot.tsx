@@ -9,6 +9,7 @@ import {
   ScrollView,
   Platform,
   ActivityIndicator,
+  Modal,
 } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
 import { Audio } from 'expo-av';
@@ -21,12 +22,16 @@ interface Message {
   isUser: boolean;
 }
 
+type Language = 'kannada' | 'telugu' | 'tamil' | 'hindi';
+
 export default function AIAssistant() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [inputText, setInputText] = useState('');
   const [isRecording, setIsRecording] = useState(false);
   const [recording, setRecording] = useState<Audio.Recording | null>(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [selectedLanguage, setSelectedLanguage] = useState<Language>('kannada');
+  const [showLanguageModal, setShowLanguageModal] = useState(false);
 
   // Request permissions on component mount
   React.useEffect(() => {
@@ -61,7 +66,7 @@ export default function AIAssistant() {
       const aiResponse: Message = {
         id: (Date.now() + 1).toString(),
         type: 'text',
-        content: 'This is a simulated AI response.',
+        content: `This is a simulated AI response in ${selectedLanguage}.`,
         isUser: false,
       };
       setMessages(prev => [...prev, aiResponse]);
@@ -155,6 +160,38 @@ export default function AIAssistant() {
     );
   };
 
+  const renderLanguageModal = () => (
+    <Modal
+      visible={showLanguageModal}
+      transparent={true}
+      animationType="slide"
+    >
+      <View style={styles.modalContainer}>
+        <View style={styles.modalContent}>
+          <Text style={styles.modalTitle}>Select Language</Text>
+          {(['kannada', 'telugu', 'tamil', 'hindi'] as Language[]).map((lang) => (
+            <TouchableOpacity
+              key={lang}
+              style={styles.languageOption}
+              onPress={() => {
+                setSelectedLanguage(lang);
+                setShowLanguageModal(false);
+              }}
+            >
+              <Text style={styles.languageOptionText}>{lang.charAt(0).toUpperCase() + lang.slice(1)}</Text>
+            </TouchableOpacity>
+          ))}
+          <TouchableOpacity
+            style={styles.closeButton}
+            onPress={() => setShowLanguageModal(false)}
+          >
+            <Text style={styles.closeButtonText}>Close</Text>
+          </TouchableOpacity>
+        </View>
+      </View>
+    </Modal>
+  );
+
   return (
     <View style={styles.container}>
       <ScrollView style={styles.messagesContainer}>
@@ -190,6 +227,18 @@ export default function AIAssistant() {
           <Ionicons name="send" size={24} color="#FFFFFF" />
         </TouchableOpacity>
       </View>
+
+      <TouchableOpacity
+        style={styles.languageButton}
+        onPress={() => setShowLanguageModal(true)}
+      >
+        <Ionicons name="language" size={24} color="#FFFFFF" />
+        <Text style={styles.languageButtonText}>
+          {selectedLanguage.charAt(0).toUpperCase() + selectedLanguage.slice(1)}
+        </Text>
+      </TouchableOpacity>
+
+      {renderLanguageModal()}
     </View>
   );
 }
@@ -264,4 +313,59 @@ const styles = StyleSheet.create({
     padding: 16,
     alignItems: 'center',
   },
+  languageButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#363636',
+    padding: 12,
+    borderTopWidth: 1,
+    borderTopColor: '#2B2B2B',
+  },
+  languageButtonText: {
+    color: '#FFFFFF',
+    fontSize: 16,
+    marginLeft: 8,
+  },
+  modalContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+  },
+  modalContent: {
+    backgroundColor: '#2B2B2B',
+    borderRadius: 12,
+    padding: 20,
+    width: '80%',
+  },
+  modalTitle: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: '#FFFFFF',
+    marginBottom: 16,
+    textAlign: 'center',
+  },
+  languageOption: {
+    paddingVertical: 12,
+    borderBottomWidth: 1,
+    borderBottomColor: '#363636',
+  },
+  languageOptionText: {
+    fontSize: 18,
+    color: '#FFFFFF',
+    textAlign: 'center',
+  },
+  closeButton: {
+    marginTop: 16,
+    padding: 12,
+    backgroundColor: '#363636',
+    borderRadius: 8,
+  },
+  closeButtonText: {
+    color: '#FFFFFF',
+    fontSize: 16,
+    textAlign: 'center',
+  },
 });
+
