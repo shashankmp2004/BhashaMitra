@@ -1,4 +1,6 @@
 
+<h1>BhashaMitra</h1>
+
 ## Features
 
 - **Engaging Lessons:** Learn languages through interactive and gamified lessons.
