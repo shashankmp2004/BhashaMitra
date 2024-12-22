@@ -24,7 +24,7 @@ const shopItems: ShopItem[] = [
     id: '1',
     name: 'Premium Subscription',
     description: 'Get access to all premium features for 1 month',
-    price: 9.99,
+    price: 999,
     image: '/placeholder.svg?height=100&width=100',
     icon: 'star',
   },
@@ -32,7 +32,7 @@ const shopItems: ShopItem[] = [
     id: '2',
     name: 'Language Course Bundle',
     description: 'Access to 5 language courses of your choice',
-    price: 49.99,
+    price: 499,
     image: '/placeholder.svg?height=100&width=100',
     icon: 'book',
   },
@@ -40,7 +40,7 @@ const shopItems: ShopItem[] = [
     id: '3',
     name: 'Conversation Practice Pack',
     description: '10 one-on-one conversation sessions with native speakers',
-    price: 29.99,
+    price: 299,
     image: '/placeholder.svg?height=100&width=100',
     icon: 'chatbubbles',
   },
@@ -48,7 +48,7 @@ const shopItems: ShopItem[] = [
     id: '4',
     name: 'Grammar Mastery eBook',
     description: 'Comprehensive guide to master grammar rules',
-    price: 14.99,
+    price: 149,
     image: '/placeholder.svg?height=100&width=100',
     icon: 'document-text',
   },
@@ -56,7 +56,7 @@ const shopItems: ShopItem[] = [
     id: '5',
     name: 'Vocabulary Booster',
     description: 'Expand your vocabulary with 1000+ new words',
-    price: 19.99,
+    price: 199,
     image: '/placeholder.svg?height=100&width=100',
     icon: 'list',
   },
@@ -80,7 +80,7 @@ export default function ShopPage() {
       </View>
       <View style={styles.itemInfo}>
         <Text style={styles.itemName}>{item.name}</Text>
-        <Text style={styles.itemPrice}>${item.price.toFixed(2)}</Text>
+        <Text style={styles.itemPrice}>₹{item.price.toFixed(2)}</Text>
       </View>
       <Ionicons name="chevron-forward" size={24} color="#666666" />
     </TouchableOpacity>
@@ -107,7 +107,7 @@ export default function ShopPage() {
               </View>
               <Text style={styles.modalItemName}>{selectedItem.name}</Text>
               <Text style={styles.modalItemDescription}>{selectedItem.description}</Text>
-              <Text style={styles.modalItemPrice}>${selectedItem.price.toFixed(2)}</Text>
+              <Text style={styles.modalItemPrice}>₹{selectedItem.price.toFixed(2)}</Text>
               <TouchableOpacity
                 style={styles.addToCartButton}
                 onPress={() => {
