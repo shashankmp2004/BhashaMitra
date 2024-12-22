@@ -1,3 +1,4 @@
+import React from "react";
 import { CourseDetailsBar } from "@/components/course-details-bar";
 import { Icon } from "@/components/icons";
 import { Text, View } from "@/components/themed";

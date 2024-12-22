@@ -13,7 +13,7 @@ export const iAmHungryTranslate: TranslateExercise = {
   sentence: {
     content: {
       en: "I am hungry",
-      kn: "ನಾನು ಹಸಿವಾಗಿದ್ದೇನೆ",
+      kn: "ನನಗೆ ಹಸಿವಾಗಿದೆ",
       te: "నేను బొక్కైనాను",
       ta: "நான் பசிக்குள்ளேன்",
       hi: "मैं भूखा हूँ",
